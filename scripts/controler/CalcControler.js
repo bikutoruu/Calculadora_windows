@@ -12,7 +12,7 @@ class CalcControler {
         this.initialize();
         this.initButtonsEvents();
 
-
+        //teste
     }
 
     initialize() {
@@ -113,6 +113,7 @@ class CalcControler {
 
 
                 console.log(value);
+
 
 
             } else {
