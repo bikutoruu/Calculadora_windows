@@ -19,7 +19,7 @@ class CalcControler {
         this.initButtonsEvents();
         this.initKeyboard();
 
-        //teste
+
     }
 
     initialize() {
@@ -425,6 +425,10 @@ class CalcControler {
     }
 
     set displayCalc(value) {
+        if (value.toString().length > 10) {
+            this.error();
+            return false;
+        }
         this._displayCalcEl.innerHTML = value;
     }
 
