@@ -197,11 +197,16 @@ class CalcControler {
 
     getResult() {
 
+        try {
 
+            return eval(this._operation.join(""));
+        } catch (e) {
+            setTimeout(() => {
+                this.error();
+            }, 1);
 
-        return eval(this._operation.join(""));
+        }
     }
-
     calc() {
 
         let last = '';
